@@ -1,3 +1,4 @@
+/*General Rules*/
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -6,6 +7,11 @@ body {
   opacity: 0.9;
   text-align: center;
   margin: 0;
+}
+h2, h4, h3, h5 {
+  margin: 0;
+  padding: 10px 0 10px;
+  opacity: 0.9;
 }
 /*Header*/
 header {
@@ -32,11 +38,6 @@ nav {
 nav a {
   color: seashell;
   margin: 13px;
-}
-h2, h4, h3, h5 {
-  margin: 0;
-  padding: 10px 0 10px;
-  opacity: 0.9;
 }
 /*Primary Content Container*/
 .container {
@@ -69,8 +70,10 @@ h2, h4, h3, h5 {
   width: inherit;
 }
 .mission-child img {
+  top: 0;
   position: absolute;
   z-index: -10;
+  align-self: flex-start;
 }
 .mission-child h2, .mission-child h4 {
   background-color: black;
@@ -137,8 +140,10 @@ h2, h4, h3, h5 {
   opacity: 0.9;
 }
 .locations-child img {
+  bottom: 0;
   position: absolute;
   z-index: -10;
+  align-self: flex-start;
 }
 /*Contact Section*/
 #contact-parent {
@@ -153,7 +158,7 @@ h2, h4, h3, h5 {
 footer {
   display: block;
   position: relative;
-  left: 20px;
+  margin-left: 20px;
   bottom: -20px;
   text-align: left;
 }
